@@ -1,0 +1,23 @@
+{
+  "name": "teste-e2e-insercao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UltimoGeeh/teste-e2e-insercao.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UltimoGeeh/teste-e2e-insercao/issues"
+  },
+  "homepage": "https://github.com/UltimoGeeh/teste-e2e-insercao#readme",
+  "dependencies": {
+    "cypress": "^15.1.0"
+  }
+}
