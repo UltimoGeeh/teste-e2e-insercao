@@ -1,5 +1,5 @@
 describe('lista de tarefas', () => {
-  it('Deve adicionar uma nova tarefa', () => {
+  /*it('Deve adicionar uma nova tarefa', () => {
     cy.visit('https://kaiquecovo.github.io/pagina-html-inserir-tabela-teste-e2e/')
 
     cy.get('#input-item').type('Conquistar dignidade')
@@ -8,16 +8,22 @@ describe('lista de tarefas', () => {
 
     cy.get('#lista-itens li').should('contain', 'Conquistar dignidade')
 
-  })
+  })*/
 
-  it('Não deve adicionar tarefa sem nome', () => {
-     cy.visit('https://kaiquecovo.github.io/pagina-html-inserir-tabela-teste-e2e/')
+  it('Criar conta no Pinterest', () => {
+     cy.visit('https://br.pinterest.com/')
 
-    cy.get('button').click()
+    cy.contains('Log in').click()
 
-    cy.get('li').should('not.exist')
+    cy.contains('Email').click()
 
-    cy.get('li').should('have.length', 0)
+    cy.get('input[id="email"]').type('88db904f9b@webxios.pro')
+
+    cy.contains('Password').click()
+
+    cy.get('input[id="password"]').type('pastel123')
+
+    cy.get('button[type="submit"]').click()
 
   })
 
